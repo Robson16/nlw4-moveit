@@ -8,7 +8,7 @@ export function Profile() {
         <strong>Robson H. Rodrigues</strong>
         <p>
           <img src="icons/level.svg" alt="Level" />
-          Level 1
+          Nível 1
         </p>
       </div>
     </div>
