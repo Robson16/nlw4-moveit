@@ -1,19 +1,19 @@
-import { useContext } from "react";
-import { CountdownContext } from "../contexts/CountdownContext";
-import styles from "../styles/components/Countdown.module.css";
+import React, { useContext } from 'react';
+import { CountdownContext } from '../contexts/CountdownContext';
+import styles from '../styles/components/Countdown.module.css';
 
-export function Countdown() {
+export default function Countdown() {
   const {
     minutes,
     seconds,
     hasFinished,
     isActive,
     resetCountdown,
-    startCountdown
+    startCountdown,
   } = useContext(CountdownContext);
 
-  const [minuteLeft, minuteRight] = String(minutes).padStart(2, "0").split("");
-  const [secondLeft, secondRight] = String(seconds).padStart(2, "0").split("");
+  const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('');
+  const [secondLeft, secondRight] = String(seconds).padStart(2, '0').split('');
 
   return (
     <div>
@@ -30,10 +30,7 @@ export function Countdown() {
       </div>
 
       {hasFinished ? (
-        <button
-          disabled
-          className={styles.countdownButton}
-        >
+        <button type="button" disabled className={styles.countdownButton}>
           Ciclo encerrado
         </button>
       ) : (
