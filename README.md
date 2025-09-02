@@ -6,10 +6,6 @@
 
 Project create at the 4th edition of [Next Level Week](https://lp.rocketseat.com.br/nlw) by Rocketseat.
 
-The web client is deployed on Vercel here:
-
-https://moveit-psi-gilt.vercel.app/
-
 <hr>
 <br>
 
